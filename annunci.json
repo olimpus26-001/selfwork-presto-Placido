@@ -1,0 +1,491 @@
+[
+    {"id":1,
+     "name":"prima maschera Corey",
+     "category":"accessori",
+     "price":27.75,
+     "img":"./media/corey-mask-1.jpg"
+    },
+
+    {"id":2,
+     "name":"seconda maschera Corey",
+     "category":"accessori",
+     "price":32.76,
+     "img":"./media/corey-mask-2.jpg"
+    },
+
+    {"id":3,
+     "name":"terza maschera Corey",
+     "category":"accessori",
+     "price":46.56,
+     "img":"./media/corey-mask-3.jpg"
+    },
+
+    {"id":4,
+     "name":"quarta maschera Corey",
+     "category":"accessori",
+     "price":90.23,
+     "img":"./media/corey-mask-4.jpg"
+    },
+    
+    {"id":5,
+     "name":"quinta maschera Corey",
+     "category":"accessori",
+     "price":90.89,
+     "img":"./media/corey-mask-5.jpg"
+    },
+
+    {"id":6,
+     "name":"sesta maschera Corey",
+     "category":"accessori",
+     "price":40.45,
+     "img":"./media/corey-mask-6.jpg"
+    },
+
+    {"id":7,
+     "name":"settima maschera Corey",
+     "category":"accessori",
+     "price":33.04,
+     "img":"./media/corey-mask-7.jpg"
+    },
+
+    {
+     "id":8,
+     "name":"ottava maschera Corey",
+     "category":"accessori",
+     "price":56.61,
+     "img":"./media/corey-mask-8.jpg"
+    },
+
+    {"id":9,
+     "name":"prima maschera Mick",
+     "category":"accessori",
+     "price":62.59,
+     "img":"./media/mick-mask-1.jpg"
+    },
+
+    {"id":10,
+     "name":"seconda maschera Mick",
+     "category":"accessori",
+     "price":45.77,
+     "img":"./media/mick-mask-2.jpg"
+    },
+
+    {"id":11,
+     "name":"terza maschera Mick",
+     "category":"accessori",
+     "price":23.85,
+     "img":"./media/mick-mask-3.jpg"
+    },
+
+    {"id":12,
+     "name":"prima maschera Jim",
+     "category":"accessori",
+     "price":32.08,
+     "img":"./media/jim-mask-1.jpg"
+    },
+
+    {"id":13,
+     "name":"seconda maschera Jim",
+     "category":"accessori",
+     "price":16.07,
+     "img":"./media/jim-mask-2.jpg"
+    },
+  
+    {"id":14,
+     "name":"terza maschera Jim",
+     "category":"accessori",
+     "price":22.37,
+     "img":"./media/jim-mask-3.jpg"
+    },
+
+    {"id":15,
+     "name":"quarta maschera Jim",
+     "category":"accessori",
+     "price":21.58,
+     "img":"./media/jim-mask-4.jpg"
+    },
+
+    {"id":16,
+     "name":"quinta maschera Jim",
+     "category":"accessori",
+     "price":44.87,
+     "img":"./media/jim-mask-5.jpg"
+    },
+
+    {"id":17,
+     "name":"sesta maschera Jim",
+     "category":"accessori",
+     "price":26.46,
+     "img":"./media/jim-mask-6.jpg"
+    },
+
+    {"id":18,
+     "name":"prima maschera Joey",
+     "category":"accessori",
+     "price":59.49,
+     "img":"./media/joey-mask-1.jpg"
+    },
+
+    {"id":19,
+     "name":"seconda maschera Joey",
+     "category":"accessori",
+     "price":38.25,
+     "img":"./media/joey-mask-2.jpg"
+    },
+
+    {"id":20,
+     "name":"terza maschera Joey",
+     "category":"accessori",
+     "price":71.07,
+     "img":"./media/joey-mask-3.jpg"
+    },
+
+    {"id":21,
+     "name":"quarta maschera Joey",
+     "category":"accessori",
+     "price":76.46,
+     "img":"./media/joey-mask-4.jpg"
+    },
+
+    {"id":22,
+     "name":"prima maschera Paul",
+     "category":"accessori",
+     "price":58.57,
+     "img":"./media/paul-mask-1.jpg"
+    },
+
+    {"id":23,
+     "name":"seconda maschera Paul",
+     "category":"accessori",
+     "price":7.79,
+     "img":"./media/paul-mask-2.jpg"
+    },
+
+    {"id":24,
+     "name":"terza maschera Paul",
+     "category":"accessori",
+     "price":65.35,
+     "img":"./media/paul-mask-4.jpg"
+    },
+
+    {"id":25,
+     "name":"quarta maschera Paul",
+     "category":"accessori",
+     "price":47.67,
+     "img":"./media/paul-mask-4.jpg"
+    },
+
+    {"id":26,
+     "name":"prima maschera Sid",
+     "category":"accessori",
+     "price":69.07,
+     "img":"./media/sid-mask-1.jpg"
+    },
+
+    {"id":27,
+     "name":"seconda maschera Sid",
+     "category":"accessori",
+     "price":61.41,
+     "img":"./media/sid-mask-2.jpg"
+    },
+
+    {"id":28,
+     "name":"terza maschera Sid",
+     "category":"accessori",
+     "price":5.61,
+     "img":"./media/sid-mask-3.jpg"
+    },
+
+    {"id":29,
+     "name":"quarta maschera Sid",
+     "category":"accessori",
+     "price":11.16,
+     "img":"./media/sid-mask-4.jpg"
+    },
+
+    {"id":30,
+     "name":"quinta maschera Sid",
+     "category":"accessori",
+     "price":68.32,
+     "img":"./media/sid-mask-5.jpg"
+    },
+
+    {"id":31,
+     "name":"sesta maschera Sid",
+     "category":"accessori",
+     "price":12.4,
+     "img":"./media/sid-mask-6.jpg"
+    },
+
+    {"id":32,
+     "name":"settima maschera Sid",
+     "category":"accessori",
+     "price":56.02,
+     "img":"./media/sid-mask-7.jpg"
+    },
+
+    {"id":33,
+     "name":"prima maschera Clown",
+     "category":"accessori",
+     "price":58.97,
+     "img":"./media/clown-mask-1.jpg"
+    },
+
+    {"id":34,
+     "name":"seconda maschera Clown",
+     "category":"accessori",
+     "price":42.53,
+     "img":"./media/clown-mask-2.jpg"
+    },
+
+    {"id":35,
+     "name":"terza maschera Clown",
+     "category":"accessori",
+     "price":4.05,
+     "img":"./media/clown-mask-3.jpg"
+    },
+
+    {"id":36,
+     "name":"quarta maschera Clown",
+     "category":"accessori",
+     "price":59.96,
+     "img":"./media/clown-mask-4.jpg"
+    },
+
+    {"id":37,
+     "name":"quinta maschera Clown",
+     "category":"accessori",
+     "price":73.15,
+     "img":"./media/clown-mask-5.jpg"
+    },
+
+    {"id":38,
+     "name":"sesta maschera Clown",
+     "category":"accessori",
+     "price":62.48,
+     "img":"./media/clown-mask-6.jpg"
+    },
+
+    {"id":39,
+     "name":"settima maschera Clown",
+     "category":"accessori",
+     "price":78.84,
+     "img":"./media/clown-mask-7.jpg"
+    },
+
+    {"id":40,
+     "name":"ottava maschera Clown",
+     "category":"accessori",
+     "price":25.65,
+     "img":"./media/clown-mask-8.jpg"
+    },
+
+    {"id":41,
+     "name":"prima maschera Craig",
+     "category":"accessori",
+     "price":15.35,
+     "img":"./media/craig-mask-1.jpg"
+    },
+
+    {"id":42,
+     "name":"seconda maschera Craig",
+     "category":"accessori",
+     "price":99.44,
+     "img":"./media/craig-mask-2.jpg"
+    },
+
+    {"id":43,
+     "name":"terza maschera Craig",
+     "category":"accessori",
+     "price":5.45,
+     "img":"./media/craig-mask-3.jpg"
+    },
+
+    {"id":44,
+     "name":"quarta maschera Craig",
+     "category":"accessori",
+     "price":62.06,
+     "img":"./media/craig-mask-4.jpg"
+    },
+
+    {"id":45,
+     "name":"prima maschera Jay",
+     "category":"accessori",
+     "price":43.51,
+     "img":"./media/jay-mask-1.jpg"
+    },
+
+    {"id":46,
+     "name":"seconda maschera Jay",
+     "category":"accessori",
+     "price":50.17,
+     "img":"./media/jay-mask-2.jpg"
+    },
+
+    {"id":47,
+     "name":"terza maschera jay",
+     "category":"accessori",
+     "price":73.75,
+     "img":"./media/jay-mask-3.jpg"
+    },
+
+    {"id":48,
+     "name":"quarta maschera Jay",
+     "category":"accessori",
+     "price":69.15,
+     "img":"./media/jay-mask-4.jpg"
+    },
+
+    {"id":49,
+     "name":"prima maschera Vman",
+     "category":"accessori",
+     "price":28.12,
+     "img":"./media/vman-mask-1.jpg"
+    },
+
+    {"id":50,
+     "name":"seconda maschera Vman",
+     "category":"accessori",
+     "price":23.35,
+     "img":"./media/vman-mask-2.jpg"
+    },
+
+    {"id":51,
+     "name":"terza maschera Vman",
+     "category":"accessori",
+     "price":37.85,
+     "img":"./media/vman-mask-3.jpg"
+    },
+
+    {"id":52,
+     "name":"maschera Eloy",
+     "category":"accessori",
+     "price":74.15,
+     "img":"./media/eloy-mask.jpg"
+    },
+
+    {"id":53,
+     "name":"album-slipknot",
+     "category":"Music",
+     "price":33.81,
+     "img":"./media/album-slipknot-1.jpg"
+    },
+
+    {"id":54,
+     "name":"album-iowa",
+     "category":"Music",
+     "price":82.35,
+     "img":"./media/album-slipknot-2.jpg"
+    },
+
+    {"id":55,
+     "name":"album-vol.3 the subliminal verses",
+     "category":"Music",
+     "price":9.82,
+     "img":"./media/album-slipknot-3.jpg"
+    },
+
+    {"id":56,
+     "name":"album-all hope is gone",
+     "category":"Music",
+     "price":30.49,
+     "img":"./media/album-slipknot-4.jpg"
+    },
+
+    {"id":57,
+     "name":"album-the gray chapter",
+     "category":"Music",
+     "price":27.47,
+     "img":"./media/album-slipknot-5.jpg"
+    },
+
+    {"id":58,
+     "name":"album-we are not yout kind!",
+     "category":"Music",
+     "price":8.68,
+     "img":"./media/album-slipknot-6.jpg"
+    },
+
+    {"id":59,
+     "name":"album-the end so far",
+     "category":"Music",
+     "price":51.3,
+     "img":"./media/album-slipknot-7.jpg"
+    },
+
+    {"id":60,
+     "name":"album-live",
+     "category":"Music",
+     "price":73.92,
+     "img":"./media/album-slipknot-live.jpg"
+    },
+
+    {"id":61,
+     "name":"batteria Joey Jordison",
+     "category":"strumenti",
+     "price":5546.29,
+     "img":"./media/drum.jpg"
+    },
+
+    {"id":62,
+     "name":"una chitarra di Jim",
+     "category":"strumenti",
+     "price":1440.8,
+     "img":"./media/guitar-jim.jpg"
+    },
+
+    {"id":63,
+     "name":"la seconda chitarra di Jim",
+     "category":"strumenti",
+     "price":1390.8,
+     "img":"./media/guitar-jim-2.jpg"
+    },
+
+    {"id":64,
+     "name":"la terza chitarra di Jim",
+     "category":"strumenti",
+     "price":70.46,
+     "img":"./media/guitar-jim-3.jpg"
+    },
+
+    {"id":65,
+     "name":"una chitarra di Mick",
+     "category":"strumenti",
+     "price":1169.96,
+     "img":"./media/guitar-mick.jpg"
+    },
+
+    {"id":66,
+     "name":"l'altra chitarra di Mick",
+     "category":"strumenti",
+     "price":1526.76,
+     "img":"./media/guitar-mick-2.jpg"
+    },
+
+    {"id":67,
+     "name":"tuta slipknot rossa",
+     "category":"vestiti",
+     "price":531.25,
+     "img":"./media/suit-red.jpg"
+    },
+
+    {"id":68,
+     "name":"tuta slipknot bianca",
+     "category":"vestiti",
+     "price":462.36,
+     "img":"./media/suit-white.jpg"
+    },
+
+    {"id":69,
+     "name":"tuta slipknot nera",
+     "category":"vestiti",
+     "price":686.09,
+     "img":"./media/suit-black.jpg"
+    },
+
+    {"id":70,
+     "name":"bacchette con sangue di Joey",
+     "category":"strumenti",
+     "price":8864.99,
+     "img":"./media/stick-blood.jpg"}
+]

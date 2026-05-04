@@ -1,0 +1,49 @@
+/* stile caratteri */
+
+*{
+    font-family: quantico, sans-serif;
+}
+
+h1, h2, h3{
+    font-family: Rubik Distressed, sans-serif;
+    color:var(--red);
+}
+
+/* variabili */
+
+:root{
+    --blk: rgb(35, 35, 35);
+    --red: rgb(183, 51, 63);
+    --gry: rgb(166, 166, 166);
+}
+
+/* colori preimpostati */
+
+body{
+    background-color: var(--gry);
+}
+
+.bg-grey{
+    background-color: var(--gry);
+}
+
+.bg-black{
+    background-color: var(--blk);
+}
+
+.bg-red{
+    background-color: var(--red);
+}
+
+.text-grey{
+    color: var(--gry);
+}
+
+.text-black{
+    color: var(--blk);
+}
+
+.text-red{
+    color: var(--red);
+}
+
