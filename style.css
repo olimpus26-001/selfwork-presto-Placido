@@ -12,9 +12,9 @@ h1, h2, h3{
 /* variabili */
 
 :root{
-    --blk: rgb(35, 35, 35);
-    --red: rgb(183, 51, 63);
-    --gry: rgb(166, 166, 166);
+    --blk: rgb(8, 8, 8);
+    --red: rgb(184, 8, 9);
+    --gry: rgb(248, 252, 251);
 }
 
 /* colori preimpostati */
@@ -47,3 +47,53 @@ body{
     color: var(--red);
 }
 
+/* sezione nav */
+
+.black{
+    height: 200px;
+    background-color: gray;
+}
+
+.navbar-custom{
+    height: 100px;
+    background: linear-gradient(90deg, 
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 25%, 
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 1) 75%, 
+        rgba(0, 0, 0, 1) 100%
+    );
+    border-bottom: 2px solid var(--red);
+}
+
+.offcanvas-end{
+    color: var(--red);
+    
+}
+
+.offcanvas-header, .offcanvas-body{
+    border-left: 1px solid var(--red);
+    box-shadow: 0px 10px 5px black;
+}
+
+.nav-link{
+    color: var(--red);
+}
+
+.offcanvas .nav-link:hover, .offcanvas .nav-link:focus, .offcanvas .nav-link:active {
+    color: var(--text-red); 
+    text-decoration: underline;
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+
+.img-corey{
+    height: 600px;
+    transform: rotateY(180deg);
+}
+
+.vuoto{
+    height: 34567px;
+}
