@@ -16,11 +16,13 @@ window.addEventListener('scroll', ()=>{
     if (scroll > 0) {
         navbar.style.height = '50px';
         navbar.classList.add('bg-black');
+        navbar.style.transition = '0.5s';
         logoSlipknot.style.transform = 'rotateX(-90deg)';
         logoSlipknot.style.transition = '0.2s';
     }else{
         navbar.style.height = '100px';
         navbar.classList.remove('bg-black');
+        navbar.style.transition = '0.5s';
         logoSlipknot.style.transform = 'rotateX(0deg)';
         logoSlipknot.style.transition = '0.5s';
     }
@@ -39,3 +41,16 @@ cross.addEventListener('click', ()=>{
         closeDelay.hide();
     }, 500);
 })
+
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+
+  autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+});
+

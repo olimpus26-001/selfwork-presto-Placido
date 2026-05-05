@@ -51,7 +51,7 @@ body{
 
 .black{
     height: 200px;
-    background-color: gray;
+    background-color: rgb(46, 46, 46);
 }
 
 .navbar-custom{
@@ -94,6 +94,31 @@ body{
     transform: rotateY(180deg);
 }
 
-.vuoto{
-    height: 34567px;
+/* sezione header */
+
+.void{
+    height: 900px;
+    border: 1px solid var(--blk);
 }
+
+.swiper{
+    height: 796px;
+    width: 100%;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-shadow: 3px 3px 2px var(--gry);
+    font-size: 3rem;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.live1{background-image: url(./media/live\ 1999.jpg);}
+.live2{background-image: url(./media/live\ 2009.jpg);}
+.live3{background-image: url(./media/live\ 2012.jpg);}
+.live4{background-image: url(./media/live\ 2019.jpg);}
+.live5{background-image: url(./media/live\ 2023.jpg);}

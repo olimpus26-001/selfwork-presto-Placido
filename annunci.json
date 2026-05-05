@@ -487,5 +487,63 @@
      "name":"bacchette con sangue di Joey",
      "category":"strumenti",
      "price":8864.99,
-     "img":"./media/stick-blood.jpg"}
+     "img":"./media/stick-blood.jpg"
+    },
+
+    {"id":71,
+     "name":"prima maschera Chris",
+     "category":"accessori",
+     "price":66.99,
+     "img":"./media/chris-mask-1.jpg"
+    },
+
+    {"id":72,
+     "name":"seconda maschera Chris",
+     "category":"accessori",
+     "price":88.95,
+     "img":"./media/chris-mask-2.jpg"
+    },
+
+    {"id":73,
+     "name":"terza maschera Chris",
+     "category":"accessori",
+     "price":58.95,
+     "img":"./media/chris-mask-3.jpg"
+    },
+
+    {"id":74,
+     "name":"quarta maschera Chris",
+     "category":"accessori",
+     "price":64.97,
+     "img":"./media/chris-mask-4.jpg"
+    },
+
+    {"id":75,
+     "name":"quinta maschera Chris",
+     "category":"accessori",
+     "price":76.34,
+     "img":"./media/chris-mask-5.jpg"
+    },
+
+    {"id":76,
+     "name":"prima maschera tortilla-man",
+     "category":"accessori",
+     "price":88.95,
+     "img":"./media/tortilla-mask-1.jpg"
+    },
+
+    {"id":77,
+     "name":"seconda maschera tortilla-man",
+     "category":"accessori",
+     "price":91.12,
+     "img":"./media/tortilla-mask-2.jpg"
+    },
+    
+    {"id":78,
+     "name":"terza maschera tortilla-man",
+     "category":"accessori",
+     "price":41.67,
+     "img":"./media/tortilla-mask-3.jpg"
+    }
+
 ]
