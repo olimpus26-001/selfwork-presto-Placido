@@ -126,3 +126,44 @@ storycards.forEach((storyCard)=>{
     cardWrapper.appendChild(div);
 
 })
+
+// logica numeri
+
+let ozzFest = document.querySelector('#ozzFest');
+let download = document.querySelector('#download');
+let knotFest = document.querySelector('#knotFest');
+
+let confirm = true;
+
+function creaIncremento(n, element, time) {
+
+    let counter = 0;
+
+    let interval = setInterval(()=>{
+        if (counter < n) {
+        counter++
+        element.innerHTML = counter;
+        }else{
+            clearInterval(interval);
+        }
+    },time);
+
+    setTimeout(()=>{
+        confirm = true;
+    }, 8000)
+   
+}
+
+let observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting && confirm) {
+            creaIncremento(180000, ozzFest, 1);
+            creaIncremento(80000, download, 1);
+            creaIncremento(100000, knotFest, 1);
+            confirm = false;
+        }
+    });
+
+});
+
+observer.observe(ozzFest);

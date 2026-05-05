@@ -21,7 +21,7 @@ h1, h2, h3{
 /* colori preimpostati */
 
 body{
-    background-color: var(--gry);
+    background-color:black;
 }
 
 .bg-grey{
@@ -104,8 +104,8 @@ body{
 
 .card-time{
     height: 1200px;
-    border: 1px solid var(--blk);
-    box-shadow: 2px 2px 5px var(--red), -2px -2px 5px var(--red);
+    border: 3px dotted var(--red);
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
     background-color: var(--atr)
 }
 
@@ -142,9 +142,16 @@ body{
     text-align: center;
 }
 
+.title{
+    border: 3px dotted var(--red);
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
+}
+
 .swiper{
     height: 796px;
     width: 100%;
+    border: 3px dotted var(--red);
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
 }
 
 .swiper-slide{
@@ -156,6 +163,10 @@ body{
     font-size: 3rem;
     letter-spacing: 2px;
     word-spacing: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .live1{background-image: url(./media/live\ 1999.jpg);}
@@ -163,3 +174,23 @@ body{
 .live3{background-image: url(./media/live\ 2012.jpg);}
 .live4{background-image: url(./media/live\ 2019.jpg);}
 .live5{background-image: url(./media/live\ 2023.jpg);}
+
+/* sezione numbers */
+
+.numbers{
+    background-color: var(--blk);
+    height: 280px;
+    width: 100%;
+    border: 3px dotted var(--red);
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
+}
+
+@media screen and (max-width:600px) {
+    .numbers{
+        height: 420px;
+    }    
+}
+
+/* FINE PAGINA HOME */
+
+/* INIZIO PAGINA ANNUNCI */
