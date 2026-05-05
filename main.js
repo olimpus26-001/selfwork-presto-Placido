@@ -54,3 +54,75 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+let storycards = [
+    {punto: 0, 
+     img: `./media/story-1.jpg`, 
+     anno: '1993', 
+     evento: 'nasce la band'
+    },
+
+    {punto: 12, 
+     img:`./media/album-slipknot-1.jpg`, 
+     anno: '1999', 
+     evento: 'primo album "slipknot"'
+    },
+
+    {punto: 25, 
+     img: `./media/album-slipknot-2.jpg` , 
+     anno: '2002', 
+     evento: 'nasce "Iowa" e prima pausa'
+    },
+
+    {punto: 37, 
+     img: `./media/album-slipknot-3.jpg`, 
+     anno: '2007', 
+     evento: 'uscita terzo album e altra pausa'
+    },
+
+    {punto: 50, 
+     img: `./media/paul grey.jpg`, 
+     anno: '2010', 
+     evento: 'uscita "all hope is gone" e morte del bassista'
+    },
+
+    {punto: 63, 
+     img: `./media/knotfest.jpg`, 
+     anno: '2012', 
+     evento: 'primo knotfest e diversi premi assegnati alla band'
+    },
+
+    {punto: 75, 
+     img: `./media/album-slipknot-5.jpg`, 
+     anno: '2017', 
+     evento: 'licenziamento joey jordison e uscita di"the grey chapter"'
+    },
+    
+    {punto: 88, 
+     img: `./media/album-slipknot-6.jpg`, 
+     anno: '2020', 
+     evento: 'licenziamento di chris e uscita album "we are not your kind"'
+    },
+    
+    {punto: 100, 
+     img: `./media/joey jordison.jpg`, 
+     anno: '2021',
+     evento: 'morte joey jordison e uscita ultimo album "the end so far"'
+    }
+]
+
+let img = document.querySelector('#imgCard');
+let anno = document.querySelector('#anno');
+let evento = document.querySelector('#evento');
+let cardWrapper = document.querySelector('.cardWrapper');
+
+storycards.forEach((storyCard)=>{
+    let div = document.createElement('div');
+    div.classList.add('card-custom');
+    div.innerHTML = `
+        <img src="${storyCard.img}" alt="immagine evento" id="#imgCard" class="img-fluid img-custom">
+        <h3 class="anno" id="anno">${storyCard.anno}</h3>
+        <p class="evento" id="evento">${storyCard.evento}</p>
+    `;
+    cardWrapper.appendChild(div);
+
+})
