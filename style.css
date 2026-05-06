@@ -36,6 +36,10 @@ body{
     background-color: var(--red);
 }
 
+.bg-atr{
+    background-color: var(--atr);
+}
+
 .text-grey{
     color: var(--gry);
 }
@@ -69,6 +73,11 @@ body{
 
 .logo2{
     width: 40px;
+}
+
+.bi-three-dots{
+    cursor: pointer;
+
 }
 
 .offcanvas-end{
@@ -194,3 +203,41 @@ body{
 /* FINE PAGINA HOME */
 
 /* INIZIO PAGINA ANNUNCI */
+
+.filtri{
+    color: var(--red);
+background-color: var(--atr);
+}
+
+.bi-sort-down{
+    cursor: pointer;
+}
+
+.annunci{
+    color: var(--red);
+    border: 3px dotted var(--red);
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
+}
+
+.card-custom2{
+    border: 3px solid var(--red);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 27%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0px;
+
+
+}
+
+.img-annuncio{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

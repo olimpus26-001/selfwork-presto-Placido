@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>slipknot web site</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- sezione nav -->
+    
+    <div class="container-fluid black">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="./media/logo.png" alt="immagine logo" class="img-fluid">
+                
+                <nav class="navbar">
+                    <div class="container-fluid navbar-custom fixed-top"  id="navbar">
+                        <img src="./media/logo2.png" alt="immagine logo2" class="img-fluid logo2">
+                        <i class="bi bi-three-dots text-red fs-2 mb-5" id="dots" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="offcanvas-header bg-black">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">menu</h5>
+                                <button type="button" class="btn-close" aria-label="Close">
+                                    <i class="bi bi-x-lg fs-3 text-red" id="cross"></i>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body bg-black">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-2" aria-current="page" href="./index.html">Home</a>
+                                        <a class="nav-link mb-2" href="./annunci.html">merchandising</a>
+                                        <a class="nav-link mb-2" href="./chiSiamo.html">about us</a>
+                                    </li>
+                                </ul>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="./media/corey-aside.jpg"alt="immagine corey" class="img-fluid img-corey">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="filtri col-12">
+                <i class="bi bi-sort-down fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header bg-atr">
+                        <h3 class="offcanvas-title" id="offcanvasExampleLabel">Filtra per</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-atr">
+                        <div>
+                            <h3 class="text-red">categoria</h3>
+                            <div class="form-check mt-2 fs-5 text-red" id="divWrap">
+                            </div>
+                            <h3 class="text-red mt-5">prezzo</h3>
+                            <div class="prezzo d-flex justify-content-around">
+                                <input type="range" class="w-75">
+                                <p class="numbs text-red">0</p>
+                            </div>
+                            <input type="text" placeholder="cerca l'articolo" class="mt-5 ">
+                            <button type="button" class="text-red bg-black mt-2" id="confermBtn" data-bs-dismiss="offcanvas">applica filtri</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- sezione nav fine -->
+    
+    <!-- main section -->
+    
+    <main class="container-fluid">
+        
+        <section class="container mt-5">
+            <div class="row">
+                <div class="annunci col-12 d-flex justify-content-around">
+                    <h1>UN PO DI ROBA</h1>
+                </div>
+                <div id="card-wrapper" class="annunci col-12 d-flex flex-wrap justify-content-around mt-3">
+                </div>
+            </div>    
+        </section>
+        
+    </main>
+    
+    <!-- mainn section fine -->
+    
+    
+    <!-- SCRIPT -->
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!-- SWiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <!-- cusotm JS -->
+    <script src="annunci.js"></script>
+</body>
+</html>
