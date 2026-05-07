@@ -57,72 +57,79 @@ const swiper = new Swiper('.swiper', {
 let storycards = [
     {punto: 0, 
      img: `./media/story-1.jpg`, 
-     anno: '1993', 
-     evento: 'nasce la band'
+     anno: '1993-1998', 
+     evento: 'nasce la band ad Iowa con Clown, Paul Grey, Joey Jordison, Anders Colsefini e Donnie Steele'
     },
 
     {punto: 12, 
      img:`./media/album-slipknot-1.jpg`, 
-     anno: '1999', 
-     evento: 'primo album "slipknot"'
+     anno: '1999-2000', 
+     evento: 'primo album "slipknot" con la formazione che li porta fino al 2013 con i 9: Corey, Mick, Paul, Sid, Chris, Joey, Jim, Craig, clown'
     },
 
     {punto: 25, 
      img: `./media/album-slipknot-2.jpg` , 
-     anno: '2002', 
-     evento: 'nasce "Iowa" e prima pausa'
+     anno: '2001-2002', 
+     evento: `nasce l'album "Iowa" e prima pausa`
     },
 
     {punto: 37, 
      img: `./media/album-slipknot-3.jpg`, 
-     anno: '2007', 
-     evento: 'uscita terzo album e altra pausa'
+     anno: '2003-2007', 
+     evento: 'uscita terzo album "vol 3: (the subliminal verses)" e altra pausa'
     },
 
     {punto: 50, 
      img: `./media/paul grey.jpg`, 
-     anno: '2010', 
-     evento: 'uscita "all hope is gone" e morte del bassista'
+     anno: '2009-2010', 
+     evento: 'esce il quarto album "all hope is gone" e morte del bassista Paul Grey per overdose'
     },
 
     {punto: 63, 
      img: `./media/knotfest.jpg`, 
-     anno: '2012', 
-     evento: 'primo knotfest e diversi premi assegnati alla band'
+     anno: '2011-2012', 
+     evento: 'primo festival a loro nome "Knotfest" e assegnati diversi premi alla band come migliore band-live, miglior vocalist e miglior batterista metal di tutti i tempi'
     },
 
     {punto: 75, 
      img: `./media/album-slipknot-5.jpg`, 
-     anno: '2017', 
-     evento: 'licenziamento joey jordison e uscita di"the grey chapter"'
+     anno: '2013-2017', 
+     evento: 'licenziamento joey jordison, assunzione del nuovo batterista Jay Weinberg e del bassista di orgini siciliane Alessandro Venturella (in arte Vman) e uscita del quinto album "the grey chapter"- nota personale: qua la band ha cominciato a mio parere a perdere tanto -'
     },
     
     {punto: 88, 
      img: `./media/album-slipknot-6.jpg`, 
-     anno: '2020', 
-     evento: 'licenziamento di chris e uscita album "we are not your kind"'
+     anno: '2018-2020', 
+     evento: 'licenziamento di Chris Fehn e rimpiazzamento del nuovo percussinista Michael Pfaff e uscita del sesto album "we are not your kind"'
     },
     
     {punto: 100, 
      img: `./media/joey jordison.jpg`, 
-     anno: '2021',
-     evento: 'morte joey jordison e uscita ultimo album "the end so far"'
+     anno: '2021-2024',
+     evento: `morte di Joey Jordison causata da una mielite acuta trasversale, licenziamento di Jay e rimpiazzamento con Eloy Casagrande, uscita ultimo album "the end so far" e primo Knotfest ospitato a Bologna (io c'ero)`
     }
 ]
 
 let img = document.querySelector('#imgCard');
-let anno = document.querySelector('#anno');
-let evento = document.querySelector('#evento');
+let anno = document.querySelector('.anno');
+let descrizione = document.querySelector('#descrizione');
 let cardWrapper = document.querySelector('.cardWrapper');
 
 storycards.forEach((storyCard)=>{
     let div = document.createElement('div');
     div.classList.add('card-custom');
+    div.setAttribute('data-bs-toggle','modal');
+    div.setAttribute('data-bs-target','#staticBackdrop')
     div.innerHTML = `
         <img src="${storyCard.img}" alt="immagine evento" id="#imgCard" class="img-fluid img-custom">
-        <h3 class="anno" id="anno">${storyCard.anno}</h3>
-        <p class="evento" id="evento">${storyCard.evento}</p>
+        <h3 class="anno">${storyCard.anno}</h3>
     `;
+
+    div.addEventListener('click', ()=>{
+        img.src = storyCard.img;
+        anno.innerHTML = storyCard.anno;
+        descrizione.innerHTML = storyCard.evento;
+    })
     cardWrapper.appendChild(div);
 
 })

@@ -57,7 +57,7 @@ fetch('./annunci.json').then((response)=>response.json()).then((data)=>{
         let categorieUniche = Array.from(new Set(categories));
         
         categorieUniche.forEach((categoriaUnica)=>{
-            let div =document.createElement('div');
+            let div = document.createElement('div');
             div.classList.add('form-check');
             div.innerHTML = `
                 <input class="form-check-input" type="radio" name="radioDefault" id="${categoriaUnica}">
@@ -88,9 +88,9 @@ fetch('./annunci.json').then((response)=>response.json()).then((data)=>{
 
     }
     showcards(data);
-        
-    
-    
-    
+
+    let radioBtns = document.querySelector('.form-check-input');
+
+
 
 })

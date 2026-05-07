@@ -69,24 +69,24 @@
     <!-- sezione nav fine -->
     
     <!-- sezione trittico -->
-
+    
     <div class="container-fluid mt-1">
         <div class="row">
-
+            
             <!-- sezione aside -->
-
-            <div class="col-12 col-md-2">
+            
+            <div class="col-12 col-md-2 order-2 order-md-1">
                 <aside class="card-time mx-auto">
                     <div class="cardWrapper">
                     </div>
                 </aside>
             </div>
-
+            
             <!-- sezione aside fine -->
             
             <!-- sezione header -->
-
-            <div class="col-12 col-md-10">
+            
+            <div class="col-12 col-md-10 order-1 order-md-2">
                 <h1 class="title text-center display-1 bg-black">SLIPKNOT FAN-PAGE</h1>
                 <div class="swiper">
                     <div class="swiper-wrapper">
@@ -98,28 +98,48 @@
                     </div>
                 </div>
                 <!-- sezione header fine -->
-     
+                
                 <!-- sotto-sezione numbers -->
-     
-                     <div class="container numbers mt-3">
-                         <div class="row">
-                             <div class="col-6 mt-3"><h3>numero persone approssimative 1999</h3></div>
-                             <div class="col-6 mt-4"><p id="ozzFest" class="text-red display-6">0</p></div>
-                             <div class="col-6 mt-3"><h3>numero persone approssimative 2009</h3></div>
-                             <div class="col-6 mt-4"><p id="download" class="text-red display-6">0</p></div>
-                             <div class="col-6 mt-3"><h3>numero persone approssimative 2012</h3></div>
-                             <div class="col-6 mt-4"><p id="knotFest" class="text-red display-6">0</p></div>
-     
-                         </div>
-                     </div>
+                
+                <div class="container numbers mt-3">
+                    <div class="row">
+                        <div class="col-6 mt-3"><h3>numero persone approssimative 1999</h3></div>
+                        <div class="col-6 mt-4"><p id="ozzFest" class="text-red display-6">0</p></div>
+                        <div class="col-6 mt-3"><h3>numero persone approssimative 2009</h3></div>
+                        <div class="col-6 mt-4"><p id="download" class="text-red display-6">0</p></div>
+                        <div class="col-6 mt-3"><h3>numero persone approssimative 2012</h3></div>
+                        <div class="col-6 mt-4"><p id="knotFest" class="text-red display-6">0</p></div>
+                        
+                    </div>
+                </div>
                 <!-- sotto-sezione numbers fine -->
-            
-
+                
+                
             </div>
         </div>
     </div>
     
     <!-- sezione trittico fine -->
+    
+    <!-- sezione modale -->
+    
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-black justify-content-between">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">cosa accade</h2>
+                    <button type="button" class="btn bg-black text-red" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+                <div class="modal-body bg-atr">
+                    <img src="" alt="immagine evento" class="img-modal h-50 w-100" id="imgCard">
+                    <h3 class="anno anno-modal mt-1"></h3>
+                    <p id="descrizione" class="text-red text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- sezione modale fine -->
     
     
     <!-- SCRIPT -->

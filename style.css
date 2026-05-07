@@ -132,12 +132,13 @@ body{
 }
 
 .img-custom{
-    height: 50%;
+    height: 80%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-position: center;
     background-size: contain;
+    cursor: pointer;
 }
 
 .anno{
@@ -149,6 +150,10 @@ body{
     font-size: 10px;
     color:var(--red);
     text-align: center;
+}
+
+#descrizione{
+    text-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
 }
 
 .title{
