@@ -49,7 +49,6 @@ fetch('./annunci.json').then((response)=>response.json()).then((data)=>{
     
     let divWrap = document.querySelector('#divWrap');
     let cardWrapper = document.querySelector('#card-wrapper');
-    let confermBtn = document.querySelector('#confermBtn');
 
     function filtri() {
         let categories = data.map((annuncio)=> annuncio.category)
@@ -89,8 +88,66 @@ fetch('./annunci.json').then((response)=>response.json()).then((data)=>{
     }
     showcards(data);
 
-    let radioBtns = document.querySelector('.form-check-input');
+    function filtroCategorie(array){
+        let categoria = Array.from(radioBtns).find((radioBtn)=>radioBtn.checked).id;
+        if (categoria != 'all') {
+            let filter = array.filter((annuncio)=> annuncio.category == categoria);
+            return filter          
+        }else{
+            return array
+        }
+        
+    }
 
+    let radioBtns = document.querySelectorAll('.form-check-input');
 
+    radioBtns.forEach((radioBtn)=>{
+        radioBtn.addEventListener('click', ()=>{
+            impostaPrezzo();
+            globalFilter();
+        })
+    })
+
+    let inputPrice = document.querySelector('#inputPrice');
+    let inputValue = document.querySelector('#inputValue');
+
+    function impostaPrezzo() {
+        let prices = filtroCategorie(data).map((annuncio)=> +annuncio.price);
+        prices.sort((a, b)=> a - b);
+        let maxPrice = Math.ceil(prices.pop());
+        inputPrice.max = maxPrice;
+        inputPrice.value = maxPrice;
+        inputValue.innerHTML = maxPrice;
+        
+    }
+    
+
+    function filtraPrezzo(array) {
+        let filtro = array.filter((annuncio)=> +annuncio.price <= inputPrice.value);
+        return filtro
+    }
+    
+    inputPrice.addEventListener('input', ()=>{
+        inputValue.innerHTML = inputPrice.value;
+        globalFilter();
+    })
+
+    let wordInput = document.querySelector('#wordInput')
+
+    function filtroParola(array) {
+        let filtro = array.filter((annuncio)=> annuncio.name.toLowerCase().includes(wordInput.value.toLowerCase()))
+        return filtro
+    }
+    
+    wordInput.addEventListener('input', ()=>{
+        globalFilter();
+    })
+
+    function globalFilter() {
+        let filterCategory = filtroCategorie(data);
+        let filterPrice = filtraPrezzo(filterCategory);
+        let filterWord = filtroParola(filterPrice);
+        showcards(filterWord)
+    }
 
 })

@@ -444,7 +444,7 @@
     {"id":64,
      "name":"la terza chitarra di Jim",
      "category":"strumenti",
-     "price":70.46,
+     "price":2170.46,
      "img":"./media/guitar-jim-3.jpg"
     },
 
@@ -486,7 +486,7 @@
     {"id":70,
      "name":"bacchette con sangue di Joey",
      "category":"strumenti",
-     "price":8864.99,
+     "price":864.99,
      "img":"./media/stick-blood.jpg"
     },
 

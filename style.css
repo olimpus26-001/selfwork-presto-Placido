@@ -205,13 +205,41 @@ body{
     }    
 }
 
+/* sezione footer */
+footer{
+    border-top:3px dotted var(--red);
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);;
+}
+
+.div-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.host-icon{
+    height: 70%;
+    width: 20%;
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.bi-chevron-double-up{
+    
+}
+
 /* FINE PAGINA HOME */
 
 /* INIZIO PAGINA ANNUNCI */
 
 .filtri{
     color: var(--red);
-background-color: var(--atr);
+    background-color: var(--atr);
 }
 
 .bi-sort-down{
@@ -245,4 +273,21 @@ background-color: var(--atr);
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.bi-sort-down-alt{
+    cursor: pointer;
+}
+
+/* FINE PAGINA ANNUNCI */
+
+/* INIZIO PAGINA CHI SIAMO */
+
+.header{
+    border: 3px dotted var(--red);
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
+}
+
+.true{
+    text-decoration: underline;
 }
