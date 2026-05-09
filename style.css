@@ -221,7 +221,6 @@ footer{
     height: 70%;
     width: 20%;
     border: 1px solid var(--red);
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,7 +255,7 @@ footer{
     border: 3px solid var(--red);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 27%;
+    width: 30%;
     height: 400px;
     text-align: center;
     display: flex;
@@ -265,12 +264,12 @@ footer{
     justify-content: space-around;
     margin: 10px 0px;
 
-
 }
 
 .img-annuncio{
-    height: 50%;
-    width: 100%;
+    height: 40%;
+    width: 90%;
+    border: 1px solid var(--red);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -290,4 +289,113 @@ footer{
 
 .true{
     text-decoration: underline;
+}
+
+.riga{
+    height: 75vh;
+}
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    background-image: url(./media/circle.png);
+    background-size: 300%;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+
+.moved{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blk);
+    
+}
+
+.flip-card{
+    height: 80%;
+    width: 50%;
+    transition: 0.5s;
+
+}
+
+.flip-card:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+.inner{
+    height: 100%;
+    width: 100%;
+    border: 3px dotted var(--red);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--gry), -2px -2px 5px var(--gry);
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    
+}
+
+.inner-face{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./media/mick.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.inner-back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    color: var(--red);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    overflow-y: auto;
+}
+
+.img-member{
+    height: 50%;
+    width: 80%;
+    border: 1px solid var(--red);
+}
+
+@media screen and (max-width: 600px){
+    .circle{
+        height: 150px;
+        width: 150px;
+    }
+    
 }
